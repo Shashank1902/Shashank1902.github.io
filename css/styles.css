@@ -20,7 +20,7 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body::-webkit-scrollbar-track {
