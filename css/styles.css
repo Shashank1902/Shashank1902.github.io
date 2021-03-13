@@ -161,6 +161,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .home-svg img {
+  display: hidden;
   width: 550px;
   position: absolute;
   top: 18%;
