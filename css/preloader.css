@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.preloader-container {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #352f4d;
+  transition: 1.5s ease;
+}
+
+.preloader {
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  background: linear-gradient(135deg, #322d48 0%, #383150 100%);
+  box-shadow: 4px 4px 8px rgba(21, 19, 30, 0.2),
+    -4px -4px 8px rgba(21, 19, 30, 0.2), 4px -4px 8px rgba(85, 75, 122, 0.7),
+    -4px 4px 10px rgba(21, 19, 30, 0.9),
+    inset -1px 1px 2px rgba(85, 75, 122, 0.3),
+    inset 1px -1px 2px rgba(21, 19, 30, 0.5);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle img {
+  width: 100%;
+  animation: middle 1s ease-in-out 1 2s;
+}
+
+.outer {
+  width: 25%;
+  height: 100%;
+  background: #352f4c;
+  box-shadow: 1px 1px 2px rgba(21, 19, 30, 0.2),
+    -1px -1px 2px rgba(21, 19, 30, 0.2), 1px -1px 2px rgba(85, 75, 122, 0.9),
+    -1px 1px 3px rgba(21, 19, 30, 0.9),
+    inset -1px 1px 2px rgba(85, 75, 122, 0.3),
+    inset 1px -1px 2px rgba(21, 19, 30, 0.5);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer img {
+  width: 0%;
+}
+
+.left-top img {
+  animation: circle 1s ease-in-out infinite;
+}
+
+.right-top img {
+  animation: circle 1s ease-in-out infinite 1s;
+}
+.left-bottom img {
+  animation: circle 1s ease-in-out infinite 1.5s;
+}
+
+.right-bottom img {
+  animation: circle 1s ease-in-out infinite 0.5s;
+}
+
+@keyframes circle {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes middle {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
