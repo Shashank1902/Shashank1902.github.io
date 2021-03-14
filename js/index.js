@@ -85,22 +85,22 @@ if (mediaQuery.matches) {
     });
 }
 
-const mediaQuerySmall = window.matchMedia('(max-width: 360px)');
+const mediaQuerySmall = window.matchMedia('(max-width: 400px)');
 
 if (mediaQuerySmall.matches) {
     card.addEventListener("mouseover", function () {
    
-        cog1.style.top = cog1t + 45 + "px";
-        cog1.style.left = cog1l - 35 + "px";
+        cog1.style.top = cog1t ;
+        cog1.style.left = cog1l ;
     
-        cog2.style.top = cog2t + 45 + "px";
-        cog2.style.left = cog2l + 130 + "px";
+        cog2.style.top = cog2t ;
+        cog2.style.left = cog2l ;
     
-        cog3.style.top = cog3t + 345 + "px";
-        cog3.style.left = cog3l - 150 + "px";
+        cog3.style.top = cog3t;
+        cog3.style.left = cog3l ;
     
-        cog4.style.top = cog4t + 345 + "px";
-        cog4.style.left = cog4l + 8 + "px";
+        cog4.style.top = cog4t;
+        cog4.style.left = cog4l;
     
     });
     
