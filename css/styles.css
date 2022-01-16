@@ -40,7 +40,6 @@ body::-webkit-scrollbar-thumb {
 .name {
   position: absolute;
   top: 20px;
-  /* left: 40px; */
   margin-left: 2%;
   font-style: normal;
   font-weight: normal;
@@ -84,11 +83,9 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 60px;
   height: 350px;
-  /* left: 40px; */
   margin-left: 2%;
   bottom: 0px;
   border-radius: 100px 100px 0px 0px;
-  /* border-bottom-right-radius: 20px; */
   background: #dfc2d6;
   box-shadow: 10px 10px 20px rgba(145, 126, 139, 0.2),
     -10px -10px 20px rgba(145, 126, 139, 0.2),
@@ -125,7 +122,8 @@ body::-webkit-scrollbar-thumb {
 
 .home-div {
   width: 100vw;
-  height: 800px;
+  height: 730px;
+  margin-top: 0%;
 }
 
 .heading {
@@ -137,10 +135,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 100%;
   letter-spacing: -0.05em;
   color: #1c1635;
-  /* position: absolute;
-  top: 200px; */
-  /* left: 220px; */
-  margin-top: 18%;
+  margin-top: 20%;
   float: right;
 }
 
@@ -153,10 +148,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 100%;
   letter-spacing: -0.05em;
   color: #352f4d;
-  /* position: absolute;
-  top: 300px;
-  left: 220px; */
-  margin-top: 3%;
+  margin-top: 2%;
   float: right;
 }
 
@@ -193,9 +185,6 @@ body::-webkit-scrollbar-thumb {
     inset 2px -2px 4px rgba(255, 250, 255, 0.9),
     inset -2px 2px 5px rgba(166, 134, 144, 0.9);
   border-radius: 50px 0px 0px 50px;
-  /* position: absolute;
-  top: 150%;
-  right: 0; */
   float: right;
   display: flex;
   flex-wrap: wrap;
@@ -210,6 +199,13 @@ body::-webkit-scrollbar-thumb {
   color: #1c1635;
   margin: auto 3%;
   margin-top: auto;
+}
+
+.ab-head {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .card-div {
@@ -237,8 +233,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card:hover {
-  /* width: 300px;
-  height: 350px; */
   transform: scale(1.05);
 }
 
@@ -339,8 +333,6 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: -0.05em;
   color: #352f4d;
   float: right;
-  /* position: absolute;
-  left: 220px; */
 }
 
 .div-hr {
@@ -349,9 +341,6 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid;
   float: right;
   margin-top: 8px;
-  /* position: relative;
-  top: 60px;
-  left: 220px; */
 }
 
 .skill-div {
@@ -380,13 +369,20 @@ body::-webkit-scrollbar-thumb {
 .skill-icon {
   font-size: 100px;
 }
-
-.skill-icon:hover {
-  color: rgb(165, 0, 0);
+.skill-icon-img {
+  width: 120px;
 }
+/* .skill-icon:hover {
+  color: rgb(165, 0, 0);
+} */
 
 .skill-name {
   font-size: 20px;
+}
+
+.skill-txt {
+  font-size: 24px;
+  margin-bottom: 5%;
 }
 
 .projects {
@@ -396,10 +392,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project-tab {
-  /* margin: 100px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
   width: 100%;
   height: auto;
   display: flex;
@@ -409,7 +401,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project {
-  /* background-color: #fff; */
   max-width: 500px;
   max-height: 260px;
   width: 90%;
@@ -486,11 +477,27 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
 }
 
+.accom {
+  margin-top: 10%;
+}
 .work-heading {
   width: 100%;
-  font-size: 25px;
+  font-size: 36px;
+  margin-top: 5%;
+}
+.work-heading-item {
+  width: 100%;
+  font-size: 24px;
+}
+.achievement {
+  width: 100%;
+  font-size: 24px;
 }
 
+.work-detail {
+  margin-top: -1%;
+  font-size: 18px;
+}
 .codepen-card {
   width: 370px;
   margin: 5px 0px;
@@ -520,7 +527,6 @@ body::-webkit-scrollbar-thumb {
 .certificate {
   filter: drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25));
 }
-
 
 .contact {
   width: 85%;
@@ -574,7 +580,7 @@ a:hover {
   font-size: 14px;
 }
 .footer p {
-  margin:5px 0;
+  margin: 5px 0;
 }
 
 @media screen and (max-width: 1180px) {
@@ -608,6 +614,21 @@ a:hover {
   .btns {
     left: 8px;
   }
+  .home-div {
+    width: 100vw;
+    height: 500px;
+    margin-top: 0%;
+  }
+  .heading {
+    font-size: 56px;
+    margin-top: 20%;
+  }
+  .heading2 {
+    font-size: 46px;
+  }
+  .div-head {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -624,18 +645,22 @@ a:hover {
   .nav span {
     margin-left: 10px;
   }
-
+  .home-div {
+    width: 100vw;
+    height: 500px;
+    margin-top: 0%;
+  }
   .heading {
-    font-size: 54px;
+    font-size: 46px;
     margin-top: 40%;
   }
   .heading2 {
-    font-size: 46px;
+    font-size: 36px;
   }
 
   .home-svg img {
     width: 50%;
-    top: 100px;
+    top: 250px;
     right: 60px;
   }
 
@@ -721,8 +746,40 @@ a:hover {
   .codepen-card {
     width: 320px;
   }
+  .div-head {
+    float: left;
+    width: 98%;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .skill-icon-img {
+    width: 60px;
+  }
+  .skill-txt {
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+  .work-heading-item {
+    width: 100%;
+    font-size: 18px;
+  }
+  .work-detail {
+    margin-top: -1%;
+    font-size: 14px;
+  }
+  .accom {
+    margin-top: 10%;
+    float: left;
+  }
+  .achievement {
+    width: 100%;
+    font-size: 14px;
+  }
+  .contact-tab p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }
-
 
 @media screen and (max-width: 360px) {
   .social-tab {
@@ -737,8 +794,23 @@ a:hover {
   .nav span:nth-child(1) {
     display: none;
   }
+  .home-div {
+    width: 100vw;
+    height: 500px;
+    margin-top: 0%;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-top: 50%;
+  }
+  .heading2 {
+    font-size: 28px;
+  }
+
   .home-svg img {
-    width: 30%;
+    width: 50%;
+    top: 230px;
     right: 60px;
   }
   .card {
@@ -772,5 +844,38 @@ a:hover {
   #cog4 {
     top: 334px;
     left: 20px;
+  }
+  .div-head {
+    float: left;
+    width: 98%;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .skill-icon-img {
+    width: 60px;
+  }
+  .skill-txt {
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+  .work-heading-item {
+    width: 100%;
+    font-size: 18px;
+  }
+  .work-detail {
+    margin-top: -1%;
+    font-size: 14px;
+  }
+  .accom {
+    margin-top: 10%;
+    float: left;
+  }
+  .achievement {
+    width: 100%;
+    font-size: 14px;
+  }
+  .contact-tab p {
+    font-size: 16px;
+    margin-top: 10px;
   }
 }
